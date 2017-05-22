@@ -3,11 +3,14 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: *Constraint propogation is used to reduce the search space using the local constraints in space. 
+    Here we use the constraint that if there is naked twins, that is two boxes in a single unit have
+    same possible outcomes, its for sure that these two will be filled by either of the two. This gives us a learning that we can remove these two from anywhere in the unit, where there is a possiblity. Hence we reduced our search space using a given simple constraint.*
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: *Constraint propogation is used to reduce the search space using the local constraints in space.
+    Here we have a local constraint that states, that among the two main diagonals, the numbers 1 to 9 should all appear exactly once. We will use this constraint to reduce our search space, as eliminate and only choice will now also include these 2 extra units to reduce the search space. We incorporated this just by adding these two extra list in our unitlist.*
 
 ### Install
 
